@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Crystals Game!</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body style="background-color: #bcafaf;">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-2 col-md-1"></div>
+      <div class="col-18 col-md-12">
+
+        <!-- JUMBOTRON - game instructions-->
+
+        <div class="jumbotron jumbotron-fluid" style="background-color: #49052e; color: lightgrey; padding: 5px;">
+          <div class="container">
+            <h1 class="display-5" style="text-align: center;">Welcome to the Gems Crystal Game!</h1>
+            <hr>
+            <p class="card-text">You are given a random number at the start of the game. This is your target score.</p>
+            <p>There are 4 crystals below. by clicking on a crystal, you add a number of points to your Total Score. </p>
+            <p>You win the game by matching the total score and the random number shown below, and lose if your score goes above the number.</p>
+            <p>Challenge: The value of each crystal is hidden from you untIl you click on it! Each time the game starts, the crystals get new values.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-2 col-md-1"></div>
+
+    <!-- Target Score -->
+
+    <div class="row" style="text-align: center;">
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title"><span id="targetScore"></span></h4>
+
+            <p class="card-text">Target Score</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Current Score -->
+
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title"><span id="currentScore"></span></h4>
+            <p class="card-text">Current Score</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wins -->
+
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title"><span id="wins">__</span></h4>
+            <p class="card-text">Wins</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loses -->
+
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title"><span id="loses">__</span></h4>
+            <p class="card-text">Loses</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CRYSTALS img -->
+
+  <ul class="list-inline" style="text-align: center">
+
+    <li class="list-inline-item"><img id="diamond" class="crystal" src="assets/images/diamond.jpeg" list-style="none" </li>
+      <li class="list-inline-item"><img id="pearl" class="crystal" src="assets/images/pearl.jpeg" list-style="none" </li>
+        <li class="list-inline-item"><img id="ruby" class="crystal" src="assets/images/ruby.jpeg" list-style="none" </li>
+          <li class="list-inline-item"><img id="tanzanite" class="crystal" src="assets/images/tanzanite.jpeg" list-style="none" </li>
+
+  </ul>
+
+
+  <!-- TOTAL SCORE -->
+
+  <div class="col-sm-12">
+
+    <div class="card">
+      <div id="card-header">
+        Enjoy the game! </div>
+      <h4 class="card-title"><span id="totalScore"></span></h4>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+  <script src="assets/javascript/game.js">
+  </script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>
